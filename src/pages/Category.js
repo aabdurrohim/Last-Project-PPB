@@ -27,7 +27,11 @@ export default function Apparel() {
   };
 
   if (loading) {
-    return <h3>Loading...</h3>;
+    return (
+      <div className="loading1">
+        <h3>Loading...</h3>
+      </div>
+    );
   }
 
   return (

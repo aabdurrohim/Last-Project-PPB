@@ -4,16 +4,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
   background-color: rgb(239, 239, 239);
   border: 1px solid rgb(189, 189, 189);
   margin-top: 20px; /* Tambahkan margin top untuk memberi ruang di atas */
-  max-width: 600px; /* Sesuaikan lebar maksimal kartu */
+  max-width: 500px;
+  margin-top: 90px;
+  /* Sesuaikan lebar maksimal kartu */
   margin: 0 auto; /* Menyusun kartu di tengah */
 }
 
 .nama {
-  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .profile {
@@ -21,13 +22,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .about-image {
   margin-top: 0;
   margin-bottom: 10px;
-  width: 100%; /* Menyesuaikan lebar gambar dengan kontainer induk */
-  max-width: 150px; /* Menetapkan lebar maksimum gambar */
+  width: 80%; /* Menyesuaikan lebar gambar dengan kontainer induk */
+  max-width: 100px; /* Menetapkan lebar maksimum gambar */
   height: auto; /* Mengatur ketinggian agar menyesuaikan proporsi gambar */
   object-fit: cover; /* Mengatur gambar agar sesuai dan terpotong jika perlu */
   border-radius: 50%;

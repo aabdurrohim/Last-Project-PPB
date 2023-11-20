@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "./product-card.css";
+import "./item-card.css";
 
 export default function ApparelCard(props) {
   const [data, setData] = useState([]);
@@ -35,15 +35,15 @@ export default function ApparelCard(props) {
   }
 
   return (
-    <div className="card-list-category">
+    <div className="item-list-category">
       {data.length > 0 ? (
         data.map((item, id) => (
           <Link to={`/item/${item.id}`} key={id}>
-            <div className="card">
-              <img className="card-image" src={item.image} alt={item.title} />
-              <div className="card-content">
-                <p className="card-title">{item.title}</p>
-                <p className="card-price">Rp {item.price}</p>
+            <div className="item">
+              <img className="item-gambar" src={item.image} alt={item.title} />
+              <div className="item-konten">
+                <p className="item-judul">{item.title}</p>
+                <p className="item-harga">Rp {item.price}</p>
               </div>
             </div>
           </Link>
