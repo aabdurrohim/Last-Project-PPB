@@ -31,6 +31,13 @@
   object-fit: cover; /* Mengatur gambar agar sesuai dan terpotong jika perlu */
   border-radius: 50%;
 }
+.first {
+  margin: 0px auto;
+  margin-top: 80px;
+  width: 500px;
+  padding-bottom: 70px;
+  /* background-color: aqua; */
+}
 
 .about-content {
   width: 100%;
@@ -96,4 +103,12 @@
 .location a:hover,
 .instagram a:hover {
   transform: scale(1.2); /* Menambahkan efek zoom saat dihover */
+}
+
+@media screen and (max-width: 620px) {
+  .first {
+    margin: 0px auto;
+    margin-top: 20px;
+    width: 80%;
+  }
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
 import ProductCard from "../components/product-card";
-
+import "./Explore.css";
 export default function Home() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -26,9 +26,7 @@ export default function Home() {
   }, []);
 
   if (loading) {
-    <div className="loading">
-      <p>Loading...</p>
-    </div>;
+    <h4>Loading...</h4>;
   }
   if (error) {
     return <h3>Error...</h3>;
