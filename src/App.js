@@ -1,25 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+//icon
+import { IoSearch } from "react-icons/io5";
+import { BsHouse } from "react-icons/bs";
+import { BiCategory } from "react-icons/bi";
+import { FaRegUser } from "react-icons/fa";
+
+// Pages
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Explore from "./pages/Explore";
+import Category from "./pages/Category";
+import ProductDetail from "./pages/Detail";
+// Components
+import Header from "./components/header";
+import Footer from "./components/footer";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/movie" element={<Home />} />
+          <Route exact path="/category" element={<Category />} />
+          <Route exact path="/explore" element={<Explore />} />
+          <Route exact path="/about" element={<About />} />
+          <Route path="/item/:id" element={<ProductDetail />}></Route>
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

@@ -1,0 +1,96 @@
+.about {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(239, 239, 239);
+  border: 1px solid rgb(189, 189, 189);
+  margin-top: 20px; /* Tambahkan margin top untuk memberi ruang di atas */
+  max-width: 600px; /* Sesuaikan lebar maksimal kartu */
+  margin: 0 auto; /* Menyusun kartu di tengah */
+}
+
+.nama {
+  margin-bottom: 20px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 100%; /* Menyesuaikan lebar gambar dengan kontainer induk */
+  max-width: 150px; /* Menetapkan lebar maksimum gambar */
+  height: auto; /* Mengatur ketinggian agar menyesuaikan proporsi gambar */
+  object-fit: cover; /* Mengatur gambar agar sesuai dan terpotong jika perlu */
+  border-radius: 50%;
+}
+
+.about-content {
+  width: 100%;
+  text-align: justify;
+  padding: 20px;
+}
+
+.about-title {
+  padding: 10px;
+}
+
+.main-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.about-profile {
+  background-color: #c9c9c9;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px; /* Tambahkan margin top untuk memberi ruang di atas */
+}
+
+.github,
+.university,
+.location,
+.instagram {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.github a,
+.university a,
+.location a,
+.instagram a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.github a,
+.university a,
+.location a,
+.instagram a {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease-in-out; /* Menambahkan transisi pada transform */
+}
+
+.github a:hover,
+.university a:hover,
+.location a:hover,
+.instagram a:hover {
+  transform: scale(1.2); /* Menambahkan efek zoom saat dihover */
+}

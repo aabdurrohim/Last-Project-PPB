@@ -1,0 +1,31 @@
+.header {
+  /* position: fixed; */
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 10px 0px;
+  align-items: center;
+}
+
+.container-header {
+  width: 100%;
+  max-width: 1024px;
+  padding: 10px 0px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  margin: auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  padding-right: 10px;
+  border-right: 2px solid;
+  height: 32px;
+  cursor: default;
+}
+
+h4 {
+  padding-left: 10px;
+}
