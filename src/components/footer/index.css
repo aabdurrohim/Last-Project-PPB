@@ -42,6 +42,11 @@ footer {
   color: rgb(255, 255, 255);
   font-family: Verdana;
   font-size: 12px;
+  transition: transform 0.3s ease; /* Added transition property */
+}
+
+.iconWrapper:hover {
+  transform: scale(1.1); /* or any other transform you prefer */
 }
 .icon {
   color: rgb(255, 255, 255);

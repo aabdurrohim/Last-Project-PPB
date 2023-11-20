@@ -28,6 +28,7 @@
   width: 220px;
   overflow: hidden;
   border-radius: 10px;
+  border: rgb(79, 79, 79) 1px solid;
   text-decoration: none !important;
   text-decoration-line: none !important;
   font-family: "Poppins", sans-serif;

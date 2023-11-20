@@ -87,14 +87,14 @@
   cursor: pointer;
   text-align: left;
   padding: 10px; /* Adding padding for better visual appeal */
-  border-radius: 5px; /* Rounded corners for each category button */
-  background-color: rgb(39, 39, 39);
+  border-radius: 1px; /* Rounded corners for each category button */
+  background-color: #6d6d6d;
   color: white;
   transition: background-color 0.3s ease; /* Adding a smooth transition effect */
 }
 
 .category-title:hover {
-  background-color: #1d5f7a; /* Change background color on hover */
+  background-color: #a0a0a0; /* Change background color on hover */
 }
 
 .loading1 {

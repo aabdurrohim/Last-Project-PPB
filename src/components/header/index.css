@@ -20,11 +20,10 @@
   align-items: center;
 }
 
-.logo {
-  padding-right: 10px;
-  border-right: 2px solid;
-  height: 32px;
+.iconlogo {
   cursor: default;
+  font-size: 20px;
+  color: white;
 }
 
 p {
