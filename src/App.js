@@ -3,10 +3,6 @@ import { NavLink } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //icon
-import { IoSearch } from "react-icons/io5";
-import { BsHouse } from "react-icons/bs";
-import { BiCategory } from "react-icons/bi";
-import { FaRegUser } from "react-icons/fa";
 
 // Pages
 import Home from "./pages/Home";
@@ -14,6 +10,7 @@ import About from "./pages/About";
 import Explore from "./pages/Explore";
 import Category from "./pages/Category";
 import ProductDetail from "./pages/Detail";
+import IntroScreen from "./pages/IntoScreen";
 // Components
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -25,8 +22,8 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/movie" element={<Home />} />
+          <Route exact path="/" element={<IntroScreen />} />
+          <Route exact path="/home" element={<Home />} />
           <Route exact path="/category" element={<Category />} />
           <Route exact path="/explore" element={<Explore />} />
           <Route exact path="/about" element={<About />} />
