@@ -4,6 +4,7 @@ import { Circles } from "react-loader-spinner";
 
 import "./IntroScreen.css";
 
+//ini splashscreen
 const IntroScreen = () => {
   const navigate = useNavigate();
 
