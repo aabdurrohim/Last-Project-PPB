@@ -20,8 +20,8 @@ const IntroScreen = () => {
 
   return (
     <div className="intro-screen">
-      <Circles height="80" width="80" color="black" ariaLabel="circles-loading" wrapperStyle={{}} wrapperClass="" visible={true} />
-      <h2>Fake Shop</h2>
+      <Circles height="40" width="40" color="black" ariaLabel="circles-loading" wrapperStyle={{}} wrapperClass="" visible={true} />
+      <h3>Fake Shop</h3>
       <p>Loading...</p>
     </div>
   );

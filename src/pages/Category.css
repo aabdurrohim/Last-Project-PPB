@@ -97,12 +97,12 @@
   background-color: #a0a0a0; /* Change background color on hover */
 }
 
-.loading1 {
+.loading {
   font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  color: black;
 }
 
 @media screen and (max-width: 620px) {

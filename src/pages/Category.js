@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ItemCard from "../components/item-card";
+import { BallTriangle } from "react-loader-spinner";
 import "./Category.css";
 export default function Apparel() {
   const [categories, setCategories] = useState([]);
@@ -28,8 +29,8 @@ export default function Apparel() {
 
   if (loading) {
     return (
-      <div className="loading1">
-        <h3>Loading...</h3>
+      <div className="loading">
+        <BallTriangle height={40} width={40} radius={5} color="black" ariaLabel="ball-triangle-loading" wrapperClass={{}} wrapperStyle="" visible={true} />{" "}
       </div>
     );
   }

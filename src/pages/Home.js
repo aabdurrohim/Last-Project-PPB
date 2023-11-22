@@ -3,6 +3,8 @@ import axios from "axios";
 import { NavLink } from "react-router-dom";
 import ProductCard from "../components/product-card";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { BallTriangle } from "react-loader-spinner";
+
 import "./Home.css";
 export default function Home() {
   const [data, setData] = useState([]);
@@ -29,7 +31,7 @@ export default function Home() {
   if (loading) {
     return (
       <div className="loading">
-        <p>Loading...</p>
+        <BallTriangle height={40} width={40} radius={5} color="black" ariaLabel="ball-triangle-loading" wrapperClass={{}} wrapperStyle="" visible={true} />{" "}
       </div>
     );
   }
