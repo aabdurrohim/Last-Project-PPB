@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Circles } from "react-loader-spinner";
 
-import "./IntoScreen.css";
+import "./IntroScreen.css";
 
 const IntroScreen = () => {
   const navigate = useNavigate();

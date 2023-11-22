@@ -10,7 +10,7 @@ import About from "./pages/About";
 import Explore from "./pages/Explore";
 import Category from "./pages/Category";
 import ProductDetail from "./pages/Detail";
-import IntroScreen from "./pages/IntoScreen";
+import IntroScreen from "./pages/IntroScreen";
 // Components
 import Header from "./components/header";
 import Footer from "./components/footer";
