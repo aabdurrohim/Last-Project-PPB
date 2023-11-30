@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { BallTriangle } from "react-loader-spinner";
+
 import { Link } from "react-router-dom";
 import "./item-card.css";
 
@@ -28,7 +30,9 @@ export default function ApparelCard(props) {
   }, [props.selectedCategory]);
 
   if (loading) {
-    return <h3>Loading...</h3>;
+    return <div className="loading">
+    <BallTriangle height={40} width={40} radius={5} color="black" ariaLabel="ball-triangle-loading" wrapperClass={{}} wrapperStyle="" visible={true} />{" "}
+  </div>;
   }
   if (error) {
     return <h3>Error...</h3>;

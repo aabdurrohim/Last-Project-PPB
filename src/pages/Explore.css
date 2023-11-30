@@ -8,3 +8,12 @@
   align-items: center;
   color: black;
 }
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.cari {
+  font-size: 20px;
+}

@@ -5,10 +5,12 @@ import { BallTriangle } from "react-loader-spinner";
 
 import ProductCard from "../components/product-card";
 import "./Explore.css";
-export default function Home() {
+
+export default function Explore() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,7 +20,6 @@ export default function Home() {
       try {
         const response = await axios("https://fakestoreapi.com/products");
         setData(response.data);
-        console.log(response);
       } catch (err) {
         setError(true);
       }
@@ -26,6 +27,12 @@ export default function Home() {
     };
     fetchData();
   }, []);
+
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const filteredData = data.filter((item) => item.title.toLowerCase().includes(searchTerm.toLowerCase()));
 
   if (loading) {
     return (
@@ -40,10 +47,12 @@ export default function Home() {
 
   return (
     <div className="container">
-      {/* <h2>SELAMAT BERBELANJA</h2> */}
+      <div className="search-bar">
+        <input className="cari" type="text" placeholder="Search products..." value={searchTerm} onChange={handleSearch} />
+      </div>
       <div className="card-list">
-        {data.map((item) => (
-          <ProductCard item={item} key={item._id} />
+        {filteredData.map((item) => (
+          <ProductCard item={item} key={item.id} />
         ))}
       </div>
     </div>
